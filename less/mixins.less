@@ -1,1 +1,24 @@
 // Mixins Here
+.border-padding {
+    border: 1px solid @sea-shell;
+    padding-top: 10px;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: @river-bend;
+    font-size: 1.5rem;
+    padding-right: 20px;
+}
+
+//parametric mixin for mobile button style
+.border-radius(@radius, @fontsize) {
+    background-color: @btn-bg-color;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: @fontsize;
+    border-radius: @radius;
+    margin: 10px 20px 10px 20px;
+}
